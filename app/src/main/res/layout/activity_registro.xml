@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FAFAFA"
+    tools:context=".RegistroActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registro de Perfil"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#0D47A1"
+            android:layout_marginBottom="24dp"/>
+
+        <EditText android:id="@+id/txtNombre" android:hint="Nombres y apellidos"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:minHeight="48dp" android:layout_marginBottom="16dp"/>
+
+        <EditText android:id="@+id/txtCorreo" android:hint="Correo electrónico"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:minHeight="48dp" android:layout_marginBottom="16dp"/>
+
+        <EditText android:id="@+id/txtTelefono" android:hint="Número de teléfono"
+            android:inputType="phone"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:minHeight="48dp" android:layout_marginBottom="16dp"/>
+
+        <EditText android:id="@+id/txtFecha" android:hint="Fecha de nacimiento (DD/MM/AAAA)"
+            android:inputType="date" android:focusable="false" android:clickable="true"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:minHeight="48dp" android:layout_marginBottom="16dp"/>
+
+        <EditText android:id="@+id/txtDireccion" android:hint="Dirección de residencia"
+            android:inputType="textPostalAddress"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:minHeight="48dp" android:layout_marginBottom="24dp"/>
+
+        <Button android:id="@+id/btnFoto" android:text="Tomar Foto (solo es simulacion)"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:backgroundTint="#0288D1" android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView android:id="@+id/lblPermiso" android:text="Estado del permiso de cámara: No solicitado"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textColor="@android:color/darker_gray" android:layout_marginBottom="24dp"/>
+
+        <Button android:id="@+id/btnGuardar" android:text="Guardar Perfil"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:backgroundTint="#388E3C" android:textColor="#FFFFFF"/>
+    </LinearLayout>
+</ScrollView>

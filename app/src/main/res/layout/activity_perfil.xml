@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#E8F5E9"
+    tools:context=".PerfilActivity">
+
+    <TextView android:id="@+id/lblDatos"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:textSize="18sp" android:textColor="#1B5E20"
+        android:layout_marginBottom="24dp"/>
+
+    <Button android:id="@+id/btnInicio" android:text="Regresar al Inicio"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:backgroundTint="#1976D2" android:textColor="#FFFFFF"
+        android:layout_marginBottom="12dp"/>
+
+    <Button android:id="@+id/btnNuevo" android:text="Nuevo Perfil"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:backgroundTint="#00796B" android:textColor="#FFFFFF"/>
+</LinearLayout>
